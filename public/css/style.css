@@ -1,0 +1,55 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+[data-theme="negro"] {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+}
+
+[data-theme="celeste"] {
+    --bg-color: #87ceeb;
+    --text-color: #ff0000;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    width: 320px;
+    border: 1px solid #999;
+    border-radius: 6px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: #555;
+}
